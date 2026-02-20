@@ -31,7 +31,6 @@
             this.txtID = new System.Windows.Forms.MaskedTextBox();
             this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -53,6 +52,9 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtID
@@ -72,7 +74,7 @@
             "Otro"});
             this.cmbGenero.Location = new System.Drawing.Point(644, 215);
             this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(121, 24);
+            this.cmbGenero.Size = new System.Drawing.Size(163, 24);
             this.cmbGenero.TabIndex = 1;
             this.cmbGenero.SelectedIndexChanged += new System.EventHandler(this.cmbGenero_SelectedIndexChanged);
             // 
@@ -83,16 +85,9 @@
             this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaIngreso.TabIndex = 2;
             // 
-            // txtCargo
-            // 
-            this.txtCargo.Location = new System.Drawing.Point(644, 91);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(178, 22);
-            this.txtCargo.TabIndex = 3;
-            // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(152, 262);
+            this.txtTelefono.Location = new System.Drawing.Point(152, 261);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(165, 22);
             this.txtTelefono.TabIndex = 4;
@@ -152,7 +147,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 221);
+            this.label4.Location = new System.Drawing.Point(46, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 22);
             this.label4.TabIndex = 11;
@@ -162,7 +157,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(50, 268);
+            this.label5.Location = new System.Drawing.Point(50, 261);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 22);
             this.label5.TabIndex = 12;
@@ -278,7 +273,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(50, 308);
+            this.label11.Location = new System.Drawing.Point(50, 299);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 22);
             this.label11.TabIndex = 23;
@@ -286,16 +281,45 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(152, 309);
+            this.txtEmail.Location = new System.Drawing.Point(152, 300);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(228, 22);
             this.txtEmail.TabIndex = 24;
+            // 
+            // cmbCargo
+            // 
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Location = new System.Drawing.Point(644, 89);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(209, 24);
+            this.cmbCargo.TabIndex = 25;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(467, 261);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(142, 22);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Departamento:";
+            // 
+            // cmbDepartamento
+            // 
+            this.cmbDepartamento.FormattingEnabled = true;
+            this.cmbDepartamento.Location = new System.Drawing.Point(644, 262);
+            this.cmbDepartamento.Name = "cmbDepartamento";
+            this.cmbDepartamento.Size = new System.Drawing.Size(209, 24);
+            this.cmbDepartamento.TabIndex = 27;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 450);
+            this.Controls.Add(this.cmbDepartamento);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.cmbCargo);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnSalir);
@@ -317,7 +341,6 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.dtpFechaIngreso);
             this.Controls.Add(this.cmbGenero);
             this.Controls.Add(this.txtID);
@@ -334,7 +357,6 @@
         private System.Windows.Forms.MaskedTextBox txtID;
         private System.Windows.Forms.ComboBox cmbGenero;
         private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
-        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.MaskedTextBox txtTelefono;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
@@ -356,6 +378,9 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbDepartamento;
     }
 }
 
