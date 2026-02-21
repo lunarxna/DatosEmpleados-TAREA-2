@@ -30,6 +30,13 @@ Mensaje de alerta:
 
 
 
+Guardado en formato de tabla:
+
+<img width="1910" height="221" alt="Captura de pantalla 2026-02-20 190248" src="https://github.com/user-attachments/assets/8ad7e168-1b74-4e67-8568-766bbcbf60b2" />
+
+
+
+
 
 Contexto Académico:
 
@@ -38,5 +45,6 @@ Contexto Académico:
 - Curso / Sección: 5to-D2
 - Año escolar: 5to de secundaria
 
-Autor: 
-Rosanna Michell Payano Mariano
+Autores: 
+
+Rosanna Michell Payano Mariano y Freduard Rojas Ozuna
